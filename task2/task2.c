@@ -17,11 +17,9 @@ int main (void)
 	operations[2] = multiply;
 	operations[3] = divide;
   operations[4] = terminate;
-  
   int a, b, input;
   a = 6;
   b = 3;
-  
   while (1) {
     printf("Operand ‘a’ : %d | Operand ‘b’ : %d\n", a, b);
     printf("Specify the operation to perform (0 : add | 1 : subtract | 2 : Multiply | 3 : divide | 4 : exit): ");
@@ -35,8 +33,6 @@ int main (void)
     int result = (*operations[input])(a, b);
 		printf("x = %d\n", result);
   } 
-  
-  
 	return 0;
 }
 
